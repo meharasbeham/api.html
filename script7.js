@@ -1,4 +1,4 @@
-var container=document.createElementN("div");
+var container=document.createElement("div");
 container.className="container";
 var row=document.createElement("div");
 row.className="row"
@@ -33,7 +33,7 @@ document.body.append(div);
 async function foo(){
   let res=document.getElementById("brand").value;
   console.log(res);
-  let url=`https://makeup-api.herokuapp.com/api/v1/products.json${res}`;
+  let url=`https://colourpop.com/collections/lippie-pencil","website_link`;
   let res1 =await fetch(url);
   let res2= await res1.json();
   console.log(res2);
